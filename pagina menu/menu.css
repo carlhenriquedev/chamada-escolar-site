@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #4A90E2;
+    color: white;
+}
+
+header a {
+    display: flex;
+    gap: 10;
+}
+
+header div {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.profile-button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-button span {
+    font-weight: bold;
+}
+
+
+/* Estilização do Main */
+main {
+    text-align: center;
+    background-color: #F5A623;
+    color: white;
+    padding: 60px 0;
+}
+
+main h1 {
+    margin: 0;
+}
+
+/* Estilização das Sections */
+section {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Cards das Seções */
+section div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+section div > a {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: block;
+    padding: 16px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+}
+
+section div > a img {
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    
+}
+
+section div > a h3 {
+    color: #4A90E2;
+    font-size: 22px;
+}
+
+section div > div {
+    background-color: #4A90E2;
+    text-align: left;
+    padding: 16px;
+    padding-bottom: 50px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: block;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section div > div img {
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    
+}
+
+section div > div h3 {
+    color: #4A90E2;
+    font-size: 22px;
+}
+
+section div > div h4 {
+    color: #ddd;
+    text-align: left;
+}
+
+section div > div p {
+    color: #ddd;
+    margin: 1px;
+    text-align: left;
+}
+
+/* Estilização Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
