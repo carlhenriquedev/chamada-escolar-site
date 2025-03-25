@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="social-icons">
-            <a href="http://facebook.com">
+            <a href="http://facebook.com" targed="_blank">
                 <img src="img/facebook.png" alt="facebook" width="40px" height="35px">
             </a>
             <a href="http://instagram.com">
@@ -23,13 +23,14 @@
         </div>
 
         <a href="http://playstore.com">
-            <img  class="logo" src="img/logo_agenda.png" alt="logo">
+            <img class="logo" src="img/logo_agenda.png" alt="logo">
         </a>
 
-        <a class="auth-buttons">
-            <button class="login">Entrar</button>
-            <button class="signup">Criar conta</button>
-        </a>
+        <div class="auth-buttons">
+            <a class="login" href="login.html" targed="_blank">Entrar</a>
+            <a class="signup" href="criar.html" targed="_blank">Criar conta</a>
+        </div>
+
     </header>
 
     <div class="banner">
@@ -90,36 +91,49 @@
             
         </div>
     </main>
+    <footer>
+        <div class="footercontent">
 
+            <div class="footer-logo">
+                <img src="img/logotexto.png" class="footer-logo-img">
+                <a href="" class="politicas">Politicas de privacidade</a>
+                <a href="" class="politicas">Termos e condições</a>
+            </div>
+            
+            <ul class="footer-list">
+                <li><h3>Recursos:</h3></li>
+                <li>
+                    <a href="">Suporte</a>
+                </li>
+                <li>
+                    <a href="">Montagem gratuita</a>
+                </li>
+                <li>
+                    <a href="">Calcule e economize</a>
+                </li>
+            </ul>   
+            <ul class="footer-list">
+                <li><h3>Contatos:</h3></li>
+                <li>
+                    <a href="">chat online</a>
+                </li>
+                <li>
+                    <a href="">(81) 98888-8888 (whatsapp)</a>
+                </li>
+                <li>
+                    <a href="">Email: contato@chamadaescolar.com.br</a>
+                </li>
+            </ul>    
+            
+            <div class="footer-links">
+                <img src="img/button-app-store.png" class="rodape-tamanho">
+                <img src="img/button-google-play.png" class="rodape-tamanho">
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &#169
+            2023 copyright reserved
+        </div>
+    </footer>
 </body>
-
-<footer>
-    <div class="rodape-principal">
-        <div class="rodape-linha1">
-            <img src="img/rodape_logo.png" class="rodape-tamanho-logo">
-            <div class="rodape-cor-textos">
-                <h4>Recursos</h4>
-                <span>Suporte</span>
-                <br>
-                <span>Montagem Gratuita</span>
-                <br>
-                <span>Calcule e Economize</span>
-            </div>
-            <div class="rodape-cor-textos">
-                <h4>Contatos</h4>
-                <span>(81) 98888-8888 (whatsapp)</span>
-                <br>
-                <span>Email: contato@chamadaescolar.com.br</span>
-            </div>
-        </div>
-        <div class="rodape-linha2">
-            <div class="rodape-cor-textos">
-                Todos os direitos reservados
-            </div>
-            <img src="img/appstore_logo.png" alt="" srcset="">
-            <img src="img/googleplay_logo.png" alt="" srcset="">
-        </div>
-    </div>
-</footer>
-
 </html>

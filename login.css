@@ -33,21 +33,24 @@ h1 {
     margin-bottom: 20px;
 }
 
-button {
-    padding: 12px 20px;
+a {
+    padding: 12px 11px;
     border: none;
     border-radius: 100px;
     font-size: 16px;
     cursor: pointer;
 }
 
-.buttons button {
+.buttons a {
     background-color: #6c8df5;
     color: #fff;
     width: 48%;
 }
 
-.buttons button.active {
+.buttons .active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #6c8df5;
     color: #fff;
 }
@@ -76,26 +79,40 @@ button {
 }
 
 form input {
-    width: calc(100% - 40px);
+    width: 100%;
     padding: 12px 20px;
     border: 1px solid #ddd;
     border-radius: 100px;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     outline: none;
+}
+
+.esquecer {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.entrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
 .forgot-password {
     background: none;
     color: #6c8df5;
-    text-decoration: underline;
+    text-decoration: none;
     text-align: right;
     width: 100%;
-    margin-bottom: 10px;
+    
 }
 
 .login-button {
     background-color: #6c8df5;
     color: #fff;
+    text-decoration: none;
     width: 100%;
 }
