@@ -33,13 +33,14 @@ a {
 }
 
 .logo {
-  max-height: 60px;
+  max-height: 3.75rem;
   margin-left: 50px;
   margin-block: 5px;
 }
 
 .auth-buttons a {
-  padding: 10px 15px;
+  font-size: 1rem;
+  padding: 0.6rem 0.97rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -137,6 +138,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  align-items: center;
   max-width: 100%;
   padding-block: 50px;
 }
@@ -150,8 +152,6 @@ a {
   text-align: left;
   gap: 1rem;
   color: #0077cc;
-  padding: 18px;
-  padding-left: 25px;
   padding-top: 60px;
   font-size: 15px;
   border: 1px solid #ddd;
@@ -274,14 +274,45 @@ ul a {
   justify-content: center;
 }
 
+
 @media (max-width: 1100px) {
 
-  .depoimentos {
-    grid-template-columns: repeat(1, 1fr);
+  .dep1 {
+    width: 380px;
+    height: 200px;
+    font-size: 0.8rem;
   }
+
+  .dep1 img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  ul {
+    font-size: 0.9rem;
+  }
+
 }
 
 @media (max-width: 800px) {
+
+  .logo {
+    max-height: 3rem;
+    margin-left: 0;
+    margin-block: 0.3rem;
+  }
+
+  .auth-buttons a {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.67rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
   .banner h1 {
     font-size: 1.5rem;
@@ -294,7 +325,7 @@ ul a {
 
   .social-icons img {
     width: 25px;
-  height: 25px;
+    height: 25px;
   }
 
   .image-container1, .image-container2 {
@@ -316,6 +347,10 @@ ul a {
     max-width: 300px;
   }
 
+  .depoimentos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .dep1 {
     width: 300px;
     height: 200px;
@@ -324,12 +359,11 @@ ul a {
 
   .dep1 img {
     width: 50px;
-  height: 50px;
+    height: 50px;
   }
 
   .footer-main {
     grid-template-columns: repeat(2, 1fr);
-    font-size: 0.6rem;
   }
 
   .footer-links img {
@@ -339,10 +373,21 @@ ul a {
 
   ul {
     padding-bottom: 1rem;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .footer-politicas {
+    font-size: 0.6rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.7rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+  ul {
     font-size: 0.6rem;
   }
 }
