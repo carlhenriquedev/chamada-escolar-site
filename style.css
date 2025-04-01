@@ -105,7 +105,6 @@ a {
   padding-block: 190px;
   align-items: center;
   justify-content: center;
-  text-align: justify;
   margin: 0 auto;
   background-color: #f2f2f2;
 }
@@ -134,31 +133,44 @@ a {
   color: #f2f2f2;
 }
 
-.dep {
-  display: flex;
-  justify-content: center;
+.depoimentos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  max-width: 100%;
   padding-block: 50px;
-  gap: 60px;
 }
 
-.dep1 {
+.dep1, .dep2, .dep3 {
+
+  display: flex;
+  width: 430px;
+  height: 250px;
   background-color: #f2f2f2;
   text-align: left;
+  gap: 1rem;
   color: #0077cc;
   padding: 18px;
   padding-left: 25px;
   padding-top: 60px;
   font-size: 15px;
   border: 1px solid #ddd;
-  border-radius: 10px;
-  display: block;
-  width: 300px;
-  height: 350px;
+  border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
 }
 
-.dep1 p {
+.dep1 p, .dep2 p, .dep3 p {
   max-width: 260px;
+}
+
+.dep1 img, .dep2 img, .dep3 img {
+  width: 100px;
+  height: 100px;
+}
+
+.dep3 {
+  margin-top: 3rem;
 }
 
 .footerconteiner {
@@ -171,40 +183,66 @@ a {
   height: auto;
 }
 
-.footercontent {
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 8em;
+}
+
+.footer-logo {
+  width: 25%;
+  min-width: 150px;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding-top: 0.3rem;
+  padding-right: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.social-icons img {
+  width: 36px;
+  height:36px;
+  margin: 0 5px;
+}
+
+.footer-main {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
   padding-inline: 2rem;
   padding-bottom: 2rem;
   background-color: #6591eb;
   color: #fff;
 }
 
-.footer-logo {
+.footer-links {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  width: 55%;
+  gap: 0.6rem;
 }
 
-.footer-logo-img {
-  width: 25%;
-  min-width: 100px;
-  height: 85%;
+.footer-links img {
+  width: 8.5rem;
+  height: auto;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-icons img {
-  margin: 0 5px;
-}
-
-.politicas {
-  padding-left: 1.2rem;
-  color: #fff;
+ul {
+  list-style: none;
 }
 
 li h3 {
@@ -215,7 +253,7 @@ li {
   margin-bottom: 0rem;
 }
 
-.footer-list a {
+ul a {
   color: #fff;
   text-decoration: none;
 }
@@ -225,8 +263,86 @@ li {
   justify-content: left;
 }
 
+.politicas {
+  padding-left: 1.2rem;
+  color: #fff;
+}
+
 .footer-copyright {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1100px) {
+
+  .depoimentos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+
+  .banner h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .banner h2 {
+    font-size: 1rem;
+  }
+
+  .social-icons img {
+    width: 25px;
+  height: 25px;
+  }
+
+  .image-container1, .image-container2 {
+    font-size: medium;
+  }
+  
+  .image-container1 img, .image-container2 img {
+    width: 7rem;
+    max-width: 300px;
+  }
+
+  .text0 p {
+    font-size: 0.6rem;
+    width: 80%;
+  }
+  
+  .text0 img {
+    width: 7rem;
+    max-width: 300px;
+  }
+
+  .dep1 {
+    width: 300px;
+    height: 200px;
+    font-size: 0.6rem;
+  }
+
+  .dep1 img {
+    width: 50px;
+  height: 50px;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 0.6rem;
+  }
+
+  .footer-links img {
+    width: 5rem;
+    height: auto;
+  }
+
+  ul {
+    padding-bottom: 1rem;
+    font-size: 0.5rem;
+  }
+
+  .footer-politicas {
+    font-size: 0.6rem;
+  }
 }
