@@ -11,20 +11,23 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f0f0f0;
+    padding: 20px;
 }
 
 .container {
-    background-color: #f0f0f0;
+    background-color: #fff;
     padding: 40px;
-    width: 400px;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 400px;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 h1 {
     color: #6c8df5;
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .buttons {
@@ -33,37 +36,45 @@ h1 {
     margin-bottom: 20px;
 }
 
-a {
-    padding: 12px 11px;
-    border: none;
-    border-radius: 100px;
+.buttons a {
+    flex: 1;
+    padding: 12px 0;
+    margin: 0 5px;
+    background-color: #6c8df5;
+    color: #fff;
+    border-radius: 50px;
     font-size: 16px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 
-.buttons a {
-    background-color: #6c8df5;
-    color: #fff;
-    width: 48%;
-}
+/* aqui está esponsividade dos  botões */
+@media (max-width: 480px) {
+    .buttons {
+        flex-direction: column;
+        gap: 10px; 
+    }
 
-.buttons .active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #6c8df5;
-    color: #fff;
+    .buttons a {
+        width: 100%; 
+        margin: 0;
+    }
 }
 
 .google-login {
-    background-color: #fff;
-    color: #777;
-    border: 1px solid #ddd;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
+    color: #777;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 50px;
+    width: 100%;
     margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .google-login img {
@@ -77,42 +88,42 @@ a {
     margin-bottom: 20px;
     color: #777;
 }
-
 form input {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 15px;
     border: 1px solid #ddd;
-    border-radius: 100px;
+    border-radius: 50px;
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     outline: none;
 }
 
 .esquecer {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.forgot-password {
+    color: #6c8df5;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .entrar {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     width: 100%;
-}
-
-.forgot-password {
-    background: none;
-    color: #6c8df5;
-    text-decoration: none;
-    text-align: right;
-    width: 100%;
-    
 }
 
 .login-button {
     background-color: #6c8df5;
     color: #fff;
     text-decoration: none;
+    padding: 12px;
     width: 100%;
+    border-radius: 50px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
 }

@@ -81,7 +81,7 @@ button:hover {
   display: block;
   margin-top: 15px;
   font-size: 14px;
-  color: #4285f4;
+  color: #f6f5f9;
   text-decoration: none;
 }
 
@@ -92,13 +92,14 @@ button:hover {
 .blue-box {
   background: #6c8df5;
   color: white;
-  padding: 15px;
+  padding: 20px;
   border-radius: 8px;
   text-align: center;
   font-size: 14px;
   margin-bottom: 15px;
 }
 
+/* aqui está a responsividade */
 @media (max-width: 480px) {
   .card {
     padding: 30px;
@@ -117,5 +118,9 @@ button:hover {
   button {
     font-size: 14px;
     padding: 10px;
+  }
+
+  .blue-box {
+    padding: 15px;
   }
 }
