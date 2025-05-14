@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,16 +81,23 @@ h1 {
   text-decoration: none;
 }
 
-button {
+.criar-conta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.criar-button {
   background-color: #6c8df5;
   color: #fff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 20px;
-  font-size: 16px;
-  cursor: pointer;
+  text-decoration: none;
+  padding: 12px;
   width: 100%;
-  transition: background 0.3s ease;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
 }
 
 button:hover {

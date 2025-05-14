@@ -13,7 +13,7 @@ head {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #f2f2f2;
   color: #333;
   line-height: 1.5;
@@ -24,7 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-inline: 10px;
-  background-color: #0077cc;
+  background-color: #6591eb;
   color: #fff;
 }
 
@@ -48,7 +48,7 @@ a {
 
 .auth-buttons .login {
   background-color: #fff;
-  color: #0077cc;
+  color: #6591eb;
 }
 
 .auth-buttons .signup {
@@ -73,7 +73,7 @@ a {
 }
 
 .principal {
-  background-color: #0077cc;
+  background: #6591eb;
 }
 
 .container {
@@ -107,7 +107,7 @@ a {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  background-color: #f2f2f2;
+  background: #ffffff;
 }
 
 .text0 p {
@@ -130,7 +130,7 @@ a {
 .text1 {
   text-align: center;
   padding-block: 150px;
-  background-color: #0077cc;
+  background-color: #6591eb;
   color: #f2f2f2;
 }
 
@@ -148,7 +148,7 @@ a {
   display: flex;
   width: 430px;
   height: 250px;
-  background-color: #f2f2f2;
+  background: #f2f2f2;
   text-align: left;
   gap: 1rem;
   color: #0077cc;
@@ -178,7 +178,7 @@ a {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-  background-color: #6591eb;
+  background-color: #0077b6;
   color: #fff;
   height: auto;
 }
@@ -223,7 +223,7 @@ a {
   gap: 1rem;
   padding-inline: 2rem;
   padding-bottom: 2rem;
-  background-color: #6591eb;
+  background-color: #0077b6;
   color: #fff;
 }
 
@@ -255,7 +255,12 @@ li {
 
 ul a {
   color: #fff;
+  transition: color 0.5s ease;
   text-decoration: none;
+}
+
+ul a:hover{
+  color: #ff9800;
 }
 
 .footer-politicas {
@@ -266,6 +271,11 @@ ul a {
 .politicas {
   padding-left: 1.2rem;
   color: #fff;
+  transition: color 0.5s ease;
+}
+
+.politicas:hover{
+  color: #ff9800;
 }
 
 .footer-copyright {
