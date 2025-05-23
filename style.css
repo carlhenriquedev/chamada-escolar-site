@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +17,8 @@ head {
 
 body {
   font-family: 'noto sans', sans-serif;
-  background-color: #f2f2f2;
-  color: #333;
+  background-color: #fff;
+  color: #000;
   letter-spacing: 1px;
   line-height: 1.5;
 }
@@ -76,22 +75,29 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: #000000;
+  color: #FF8C00;
 }
 
-header button {
+header .btn-entrar {
+  font-size: 15px;
   font-weight: 600;
-  width: 120px;
-  height: 40px;
-  border: 0;
+  padding: 10px 22px;
   background-color: #00008B;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
-header.rolagem button {
+header .btn-entrar:hover {
+  background-color: #FF8C00;
+}
+
+header.rolagem .btn-entrar {
+  background-color: #ef8402;
+}
+
+header.rolagem .btn-entrar:hover {
   background-color: #ff9800;
 }
 
@@ -143,6 +149,23 @@ header.rolagem button {
   font-size: 5rem;
 }
 
+.texto-banner p {
+  margin-bottom: 2rem;
+}
+
+.cadastrar {
+  background-color: #FF8C00;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cadastrar:hover{
+  background-color: #ff9800;
+}
 
 .principal {
   background: #fff;
@@ -184,7 +207,7 @@ header.rolagem button {
   gap: 50px;
   padding-block: 230px;
   margin: 0 auto;
-  background-color: #F0F8FF;
+  background-color: #fff;
 }
 
 .container-sobrenos p {
@@ -249,8 +272,94 @@ header.rolagem button {
   margin-top: 3rem;
 }
 
-.container-duvidas {
+.container-faq {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  padding-block: 10rem;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.faq {
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+.faq h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff9800;
+}
+
+.faq-list {
+  list-style: none;
+  border-top: 1px solid #ccc;
+}
+
+.faq-list li {
+  
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.1rem;
+}
+
+.faq-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+}
+
+.bi-caret-right-fill {
+  color: #ff9800;
+}
+
+.show-all {
+  display: inline-block;
+  margin-top: 20px;
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.cta {
+  flex: 1 1 200px;
+  min-width: 300px;
+  background-color: #ff9800;
+  color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  position: relative;
+  text-align: left;
+}
+
+.cta-text {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cta-button:hover {
   background-color: #fff;
+  color: #ff9800;
+}
+
+.emogi {
+  position: absolute;
+  width: 7rem;
+  right: 40px;
+  top: 30px;
 }
 
 .conteiner-footer {
@@ -271,7 +380,7 @@ header.rolagem button {
 }
 
 .footer-logo {
-  width: 25%;
+  width: 19%;
   min-width: 150px;
 }
 
