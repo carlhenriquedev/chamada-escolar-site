@@ -7,6 +7,7 @@
   border: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 head {
@@ -53,7 +54,7 @@ header.rolagem a {
 
 }
 
-header i img {
+header a img {
   width: 10rem;
   
 }
@@ -379,7 +380,7 @@ header.rolagem .btn-entrar:hover {
   height: 8em;
 }
 
-.footer-logo {
+.footer-logo img {
   width: 19%;
   min-width: 150px;
 }
